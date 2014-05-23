@@ -6,12 +6,14 @@
 
 `bloat-blame` is a tool for working out how many bytes each line of source code
 takes up in a C++ program.  It uses `addr2line` and `readelf` to parse debug
-info.
+info and `sed` to access source code files.
 
 ## OPTIONS
 
  * `--extent [all|.text]`:
    Specifies which bytes within the binary should be analysed
+ * `--printlines [no|yes]`:
+   Include indicated source code line into the output
 
 ## DEPENDENCIES
 
